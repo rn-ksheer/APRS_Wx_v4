@@ -1,13 +1,11 @@
-# APRS_Wx_v4
-ESP32 based APRS Wx Station
 
 
-## Firmware Download
-
-👉 [Download the latest BME280 firmware](https://github.com/rn-ksheer/APRS_Wx_v4/BME280/v3.4.5.bin)
 
 
-[![Download Firmware](https://img.shields.io/badge/Download-Firmware-blue?style=for-the-badge&logo=github)](https://github.com/rn-ksheer/APRS_Wx_v4/raw/main/BME280/v3.4.5.bin)
+
+
+
+
 
 
 
@@ -122,6 +120,8 @@ These are **pre-integrated** in the firmware. You do **not** need to manage libr
 
 
 
+
+![Download BinFiles](https://img.shields.io/badge/Download-BinFiles-blue?style=for-the-badge&logo=github)
 | possible combinations | firmware version | Download |
 | :---:  |     :---:        | :---:              |
 | DHT11   | 4.1.0 | [⬇️ Download](https://github.com/rn-ksheer/APRS_Wx_v4/raw/main/DHT11/v3.4.5.bin)|
@@ -150,7 +150,7 @@ These are **pre-integrated** in the firmware. You do **not** need to manage libr
 - [ ] Advanced beacon scheduling (time-of-day, speed-based, etc.)
 ---
 
-
+<!--[![Download Firmware](https://img.shields.io/badge/Download-Firmware-blue?style=for-the-badge&logo=github)](https://github.com/rn-ksheer/APRS_Wx_v4/raw/main/BME280/v3.4.5.bin)-->
 
  > ##### My Iteration Versions:
  > - Nodemcu - v1
