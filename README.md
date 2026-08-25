@@ -60,7 +60,7 @@ To reset all settings:
 ## 🔧 Dependencies
 - ESPAsyncWebServer
 - EEPROM
-- WiFiManager *(or custom captive portal implementation)*
+- WiFiManager
 - APRS packet formatting utilities
 - Many more . . .
 
@@ -68,90 +68,73 @@ These are **pre-integrated** in the firmware. You do **not** need to manage libr
 
 ---
 
-## 🛠️ Roadmap
-- [ ]  Display Sensor data on OLED screen
-- [ ] GPS-based dynamic beaconing (position changes in real time)
-- [ ] Password protection for the config web page
-- [ ] OTA firmware upload via web interface
-- [ ] Support for digipeater functionality
-- [ ] Automatic time synchronization via NTP
-- [ ] Display Sensor data on the web page
-- [ ] Advanced beacon scheduling (time-of-day, speed-based, etc.)
----
 
-## 🔬 $\color{#fb8a03}{Current~Status!}$
-- ✅ **Beta testing in progress** with HAM operators.
- 
-- 📦 **Current firmware version includes:**
-   - 🌡️ Support for **DHT11**
-   - 🌡️ Support for **BME280**
-- 🧪 These sensor-enabled builds are undergoing real-world testing for:
-   - performance in real-world APRS conditions.
-   - Browser-based configuration reliability.
 
 > ## All Instructions to build and test the prototype has been given in the pdf.
  
-nodemcu-flasher download <a href="https://drive.google.com/drive/folders/1Jr-8lz06fxJDTsEEtfGwZtn3OogKy-7V?usp=sharing">link</a>
+ESP32-flasher download <a href="https://drive.google.com/drive/folders/1Jr-8lz06fxJDTsEEtfGwZtn3OogKy-7V?usp=sharing">link</a>
 
 
-### sample PCB
-<img src="https://github.com/user-attachments/assets/ab9ebb3e-4a45-4d9a-bdc4-5515c6a56e17" alt="pcb1" width="400" height="300" style="float:middle">
-      <img src="https://github.com/user-attachments/assets/3069b352-b3dd-4e21-9c63-c1d386fa0aac" alt="pcb2" width="400" height="450" style="float:middle">
-
-> ### $\textcolor{#fc0404}{\textsf{  1st batch of PCB received, Schematic and other details will be updated once PCB testing is done.  }}$
- 
-<img src="https://github.com/user-attachments/assets/8c59b9ad-8f9f-4441-ab93-16b8d5285eac" alt="pcb3" width=85% style="float:centre"></p>
 
 
-| Supported Senors |
+| Supported Sensors |
 | :---: | 
 | DHT11 | 
 | DHT22 |
-| RAIN   |
 | BMP180  |
 | BMP280  |
 | BME280  |
 | OLED Display  |
-| GPS  |
-| NTC  |
-| LDR  |
+
 
 >**Note:** <br>
+&#10687; ➡️BMP180 - Temperature Pressure altitude <br>
 &#10687; ➡️BMP280 - Temperature Pressure altitude <br>
 &#10687; ➡️BME280 - Temperature Pressure altitude humidity <br>
 &#10687; Both BMP280 and BME280 modules are available in 4-pin and 6-pin versions. They often look identical and cannot be visually distinguished. <br>
 &#10687; To avoid compatibility issues or errors, always purchase from a reliable and reputable seller.
 
-| possible combinations | firmware version | Firmware available |
+
+
+| Feature | BMP180 (Older Generation) | BMP280 (Next Generation) |
+| :--- | :--- | :--- |
+| **Pressure Range** | 300 to 1100 hPa | 300 to 1100 hPa |
+| **Relative Accuracy** | ±0.12 hPa (approx. ±1 metre) | ±0.12 hPa (approx. ±1 metre) |
+| **Absolute Accuracy** | ±1.0 hPa | ±1.0 hPa |
+| **RMS Noise** | 0.06 hPa (Advanced mode) | 0.0016 hPa (Ultra high res) |
+| **Interfaces Supported** | I2C only | I2C and SPI |
+| **Current Consumption** | 5 µA (at 1 sample/sec.) | 2.7 µA (at 1 sample/sec.) |
+| **Footprint Size** | 3.6 mm x 3.8 mm | 2.0 mm x 2.5 mm |
+
+
+
+| possible combinations | firmware version | Download |
 | :---:  |     :---:        | :---:              |
-| DHT11   | 3.1.0 | $\color{#039d05}{&#10003;}$  |	
-| DHT11/NTC |	
-| DHT11/NTC/OLED  |
-| DHT11/OLED 1.3"  |3.1.3 | $\color{#039d05}{&#10003;}$  |	
-| DHT11/OLED 0.96"  |3.1.4 | $\color{#039d05}{&#10003;}$  |	
-| DHT11 Dual stn   | 3.1.5 | NA  |	
+| DHT11   | 4.1.0 | |	
+| DHT11/OLED 1.3"  | | |	
+| DHT11/OLED 0.96"  | | |	
 | DHT22  |		
-| DHT22/NTC |	
-| DHT22/OLED  |	
+| DHT22/OLED 1.3"  | | |	
+| DHT22/OLED 0.96"  | | |	
 | BMP180  | 		
-| DHT11/BMP180  |	
-| DHT11/BMP180/OLED  |
+| BMP180/OLED 1.3"  | | |	
+| BMP180/OLED 0.96"  | | |	
 | BMP280  | 		
-| DHT11/BMP280  |	
-| DHT11/BMP280	OLED  |
-| BME280  | 	 3.5.0 | $\color{#039d05}{&#10003;}$  |	
-| BME280/OLED 1.3"  |	3.5.1 | $\color{#039d05}{&#10003;}$  |	
-| BME280/OLED 0.96"  |	3.5.2 | $\color{#039d05}{&#10003;}$  |	
-| DHT11/GPS |	
-| DHT11/GPS/OLED  |
-| DHT22/GPS/OLED  |
-| DHT11/LDR |	
-| DHT11/OLED/LDR  |
-| DHT22/LDR  |	
-| DHT22/OLED/LDR  |
+| BMP280/OLED 1.3"  | | |	
+| BMP280/OLED 0.96"  | | |	
+| BME280  | 		
+| BME280/OLED 1.3"  | | |	
+| BME280/OLED 0.96"  | | |	
 
 
-
+## 🛠️ Roadmap
+- [ ]  Display Sensor data on OLED screen
+- [ ] Password protection for the config web page
+- [ ] OTA firmware upload via web interface
+- [ ] Support for digipeater functionality
+- [ ] Display Sensor data on the web page
+- [ ] Advanced beacon scheduling (time-of-day, speed-based, etc.)
+---
 
 
 
