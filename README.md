@@ -85,10 +85,8 @@ These are **pre-integrated** in the firmware. You do **not** need to manage libr
 
 > ## All Instructions to build and test the prototype has been given in the pdf.
  
-ESP32-flasher download <a href="https://drive.google.com/drive/folders/1Jr-8lz06fxJDTsEEtfGwZtn3OogKy-7V?usp=sharing">link</a>
 
-
-[![ESP32-flasher download](https://img.shields.io/badge/Download-Firmware-blue?style=for-the-badge&logo=github)](https://github.com/rn-ksheer/APRS_Wx_v4/raw/main/flash_download_tool_3.9.5.zip)
+[![ESP32-flasher download](https://img.shields.io/badge/Download-Flasher-blue?style=for-the-badge&logo=github)](https://github.com/rn-ksheer/APRS_Wx_v4/raw/main/flash_download_tool_3.9.5.zip)
 
 
 
