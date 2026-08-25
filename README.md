@@ -124,7 +124,7 @@ These are **pre-integrated** in the firmware. You do **not** need to manage libr
 
 | possible combinations | firmware version | Download |
 | :---:  |     :---:        | :---:              |
-| DHT11   | 4.1.0 | [⬇️ Download](https://github.com/rn-ksheer/APRS_Wx_v4/DHT/v3.4.5.bin)|
+| DHT11   | 4.1.0 | [⬇️ Download](https://github.com/rn-ksheer/APRS_Wx_v4/raw/main/DHT11/v3.4.5.bin)|
 | DHT11/OLED 1.3"  | | |	
 | DHT11/OLED 0.96"  | | |	
 | DHT22  |		
@@ -133,10 +133,10 @@ These are **pre-integrated** in the firmware. You do **not** need to manage libr
 | BMP180  | 		
 | BMP180/OLED 1.3"  | | |	
 | BMP180/OLED 0.96"  | | |	
-| BMP280  | | [⬇️ Download](https://github.com/rn-ksheer/APRS_Wx_v4/BMP280/v3.4.4.bin)|
+| BMP280  | | [⬇️ Download](https://github.com/rn-ksheer/APRS_Wx_v4/raw/main/BMP280/v3.4.4.bin)|
 | BMP280/OLED 1.3"  | | |	
 | BMP280/OLED 0.96"  | | |			
-| BME280 | 4.1.0 | [⬇️ Download](https://github.com/rn-ksheer/APRS_Wx_v4/BME280/v3.4.5.bin)|
+| BME280 | 4.1.0 | [⬇️ Download](https://github.com/rn-ksheer/APRS_Wx_v4/raw/main/BME280/v3.4.5.bin)|
 | BME280/OLED 1.3"  | | |	
 | BME280/OLED 0.96"  | | |	
 
