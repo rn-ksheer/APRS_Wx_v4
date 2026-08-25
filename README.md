@@ -13,7 +13,7 @@ ESP32 based APRS Wx Station
 
 ##### WORK IN PROGRESS . . .
 
-# 📡  APRS_Wx_v1 ( Wemos D1 mini version) Web-Configurable
+# 📡  APRS_Wx_v4 ( ESP32 version) Web-Configurable
 
 Configure your ***APRS beacon settings*** entirely through your browser — no hardcoding, no sketch modifications, and absolutely no dependency nightmares. :trollface:
 
@@ -21,14 +21,10 @@ Configure your ***APRS beacon settings*** entirely through your browser — no h
 
 
 ---
-### <img src="https://user-images.githubusercontent.com/74038190/216122049-276bc7a5-c760-4849-805a-995d8fa6ea13.png" alt="clock" width="6%">  Prototype 
 
 ##### (Wx station As "minimalsitic" As Possible)
 
 <img src="https://github.com/user-attachments/assets/a59915d9-7893-41ea-8c82-5707780325c4" alt="prototype" width="400" height="300" style="float:left"></p>
-
-:point_right:  ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) `Current firmware is under testing by few HAMs , Please contact me if you require the `***bin file***` . `   :point_left:
-
 
 ---
 
@@ -42,15 +38,32 @@ Configure your ***APRS beacon settings*** entirely through your browser — no h
 ---
 
 ## 📦 Hardware Requirements
-- ✅ **Wemos D1 Mini** – ESP8266-based microcontroller
+- ✅ **ESP32** –based microcontroller
 - ✅ Sensors based on your selected `firmware`
 - ✅ Power source (USB 5V or 5-6v adaptor)
 - ✅ Optional: OLED display
 ---
 
-## 🔌 Wiring Diagram 🌐 Usage Guide
+## 🔌 Wiring Connections 🌐 Usage Guide
 - Depends on your sensor / Check PDF.
----
+
+## ESP32 to DHT11/DHT22 Wiring
+
+| ESP32 | Sensor |
+|:-----:|:-----:|
+| 🔴**3.3V** | **VCC** |
+| ⚫**GND** | **GND** |
+| 🟢**GPIO 4 (D4)** | **Signal / DATA** |
+
+## ESP32 to BMP180/BMP280/BME280 Wiring (I²C)
+
+| ESP32 | Sensor |
+|:-----:|:-----:|
+| 🔴**3.3V** | **VCC / VIN** |
+| ⚫**GND** | **GND** |
+| 🟢**GPIO 21 (SDA)** | **SDA** |
+| 🔵**GPIO 22 (SCL)** | **SCL** |
+
 
 ## 🔁 Resetting Configuration
 To reset all settings:
@@ -73,6 +86,12 @@ These are **pre-integrated** in the firmware. You do **not** need to manage libr
 > ## All Instructions to build and test the prototype has been given in the pdf.
  
 ESP32-flasher download <a href="https://drive.google.com/drive/folders/1Jr-8lz06fxJDTsEEtfGwZtn3OogKy-7V?usp=sharing">link</a>
+
+ESP32-flasher download <a href="https://drive.google.com/drive/folders/1Jr-8lz06fxJDTsEEtfGwZtn3OogKy-7V?usp=sharing">link</a>
+
+https://github.com/rn-ksheer/APRS_Wx_v4
+
+[![ESP32-flasher download](https://img.shields.io/badge/Download-Firmware-blue?style=for-the-badge&logo=github)](https://github.com/rn-ksheer/APRS_Wx_v4/raw/main/flash_download_tool_3.9.5.zip)
 
 
 
