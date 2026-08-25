@@ -91,7 +91,7 @@ ESP32-flasher download <a href="https://drive.google.com/drive/folders/1Jr-8lz06
 
 https://github.com/rn-ksheer/APRS_Wx_v4
 
-[![ESP32-flasher download](https://img.shields.io/badge/Download-Firmware-blue?style=for-the-badge&logo=github)](https://github.com/rn-ksheer/APRS_Wx_v4/raw/main/flash_download_tool_3.9.5.zip)
+[![ESP32-flasher download](https://img.shields.io/badge/Download-Firmware-blue?style=for-the-badge&logo=github)](https://github.com/rn-ksheer/APRS_Wx_v4/raw/flash_download_tool_3.9.5.zip)
 
 
 
